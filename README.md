@@ -2,7 +2,7 @@
 Brace yourselves for Saucy Psychic Ninjas' Dinner Blog(!!!).
 
 ## Outline
-Our site will be a blog about what was cooked for dinner at the guesthouse, to keep track of all the fantastic meals which are cooked, and so other people can hear
+Our site will be a blog about what was cooked for dinner at the guesthouse (or elsewhere). Users can submit new posts about meals, read about specific meals, and ultimately comment on posts and maybe search/filter posts.
 
 ## Aims
 - Heroku
