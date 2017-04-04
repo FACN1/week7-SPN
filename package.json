@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "Saucy Psychic Ninjas Dinner Blog",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "handlebars": "^4.0.6",
+    "hapi": "^16.1.1",
+    "inert": "^4.2.0",
+    "vision": "^4.1.1"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
