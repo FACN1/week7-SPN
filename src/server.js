@@ -13,7 +13,7 @@ server.connection({
   port: Number(process.argv[2] || 4040)
 })
 
-server.register([inert, vision], function(err){
+server.register([inert, vision], (err) => {
   if (err) throw err;
 
   server.views({
