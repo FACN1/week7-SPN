@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Saucy Psychic Ninjas Dinner Blog",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "env2": "^2.1.1",
+    "pg": "^6.1.5"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
