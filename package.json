@@ -1,0 +1,21 @@
+{
+  "name": "spn",
+  "version": "1.0.0",
+  "description": "Saucy Psychic Ninjas Dinner Blog",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACN1/week7-SPN.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACN1/week7-SPN/issues"
+  },
+  "homepage": "https://github.com/FACN1/week7-SPN#readme"
+}
