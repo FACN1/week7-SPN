@@ -28,6 +28,14 @@ const index = {
   }
 }
 
+const add = {
+  method: 'GET',
+  path: '/add',
+  handler: (request, reply) => {
+    reply.view('add')
+  }
+}
+
 module.exports = [
-  staticFiles, index
+  staticFiles, index, add
 ]
