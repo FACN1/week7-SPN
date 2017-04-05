@@ -10,6 +10,12 @@ var getPosts = function(callback) {
     callback(null, result.rows);
   });
 }
+
+var createPost = function(data, callback) {
+  connPool.query('INSERT INTO posts (dish, description, chef_name, background_color) VALUES ($1, $2, $3, $4)',[data.dish, data.description, data.chef_name, data.background_color], callback);
+}
+
 module.exports = {
-  getPosts: getPosts
+  getPosts: getPosts,
+  createPost: createPost
 }

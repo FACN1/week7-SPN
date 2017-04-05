@@ -36,6 +36,20 @@ const add = {
   }
 }
 
+const createPost = {
+  method: 'post',
+  path: '/create-post',
+  handler: (request, reply) => {
+    var data = request.payload
+    dbQueries.createPost(data, (err, result) =>{
+      if(err) {
+        return reply(err);
+      }
+      reply('You added a new post');
+    });
+  }
+}
+
 module.exports = [
-  staticFiles, index, add
+  staticFiles, index, add, createPost
 ]
