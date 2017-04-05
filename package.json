@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "7.5.0"
+  },
   "name": "spn",
   "version": "1.0.0",
   "description": "Saucy Psychic Ninjas Dinner Blog",
