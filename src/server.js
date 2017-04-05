@@ -11,7 +11,6 @@ const server = new hapi.Server()
 
 
 server.connection({
-  host: 'localhost',
   port: port
 })
 
