@@ -1,3 +1,21 @@
 body {
-  background-color: crimson;
+  background-color: white;
+  font-family: 'Helvetica';
+}
+
+header {
+  width: 100%;
+  background: crimson;
+  height: 100px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.nav-bar {
+  text-align: center;
+}
+
+.content-wrapper {
+  margin-top: 100px;
 }
