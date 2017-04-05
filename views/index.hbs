@@ -1,2 +1,18 @@
-<h1>{{title}}</h1>
-<p>{{message}}</p>
+<table>
+  <th>
+    <td>dish</td>
+    <td>description</td>
+    <td>chef name</td>
+    <td>date published</td>
+  </th>
+
+  {{#each posts}}
+  <tr class={{background_color}}>
+    <td></td>
+    <td>{{dish}}</td>
+    <td>{{description}}</td>
+    <td>{{chef_name}}</td>
+    <td>{{date_published}}</td>
+  </tr>
+  {{/each}}
+</table>
