@@ -7,17 +7,14 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
   </head>
   <body>
-    <header>
-      {{>header}}
-    </header>
 
-    <section>
+    {{>header}}
+
+    <section class="content-wrapper">
       {{{content}}}
     </section>
 
-    <footer>
-      {{>footer}}
-    </footer>
+    {{>footer}}
 
   </body>
 </html>
