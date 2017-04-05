@@ -3,6 +3,26 @@ body {
   font-family: 'Helvetica';
 }
 
+.red {
+  background: rgba(255,0,0,0.4);
+}
+
+.blue {
+  background: rgba(0,0,255,0.4);
+}
+
+.yellow {
+  background: rgba(255, 255, 0, 0.4);
+}
+
+.green {
+  background: rgba(0, 142, 6, 0.4);
+}
+
+.purple {
+  background: rgba(124, 15, 123, 0.4);
+}
+
 header {
   width: 100%;
   background: crimson;
