@@ -1,5 +1,6 @@
 const path = require('path');
 const handlers = require('./handlers.js');
+const dbQueries = require('./db_queries.js');
 
 const staticFiles = {
   method: 'GET',
@@ -11,6 +12,22 @@ const staticFiles = {
   }
 }
 
+const index = {
+  method: 'GET',
+  path: '/',
+  handler: (request, reply) => {
+    dbQueries.getPosts((err, postsArray) => {
+      if (err) {
+        return reply(err)
+      }
+      const context = {
+        posts: postsArray
+      }
+      reply.view('index', context);
+    });
+  }
+}
+
 module.exports = [
-  staticFiles
+  staticFiles, index
 ]
