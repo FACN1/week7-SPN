@@ -1,4 +1,5 @@
 const path = require('path');
+const handlers = require('./handlers.js');
 
 const staticFiles = {
   method: 'GET',
@@ -11,5 +12,5 @@ const staticFiles = {
 }
 
 module.exports = [
-  staticFiles
+  staticFiles, handlers
 ]
