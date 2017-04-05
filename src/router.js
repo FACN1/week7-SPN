@@ -12,5 +12,5 @@ const staticFiles = {
 }
 
 module.exports = [
-  staticFiles, handlers
+  staticFiles, handlers.home
 ]
