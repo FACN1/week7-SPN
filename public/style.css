@@ -10,10 +10,19 @@ header {
   position: fixed;
   top: 0px;
   left: 0px;
+  text-align: center;
 }
 
 .nav-bar {
   text-align: center;
+}
+
+.nav-bar a {
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
 }
 
 .content-wrapper {
