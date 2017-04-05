@@ -1,3 +1,50 @@
 body {
-  background-color: crimson;
+  background-color: white;
+  font-family: 'Helvetica';
+}
+
+.red {
+  background: rgba(255,0,0,0.4);
+}
+
+.blue {
+  background: rgba(0,0,255,0.4);
+}
+
+.yellow {
+  background: rgba(255, 255, 0, 0.4);
+}
+
+.green {
+  background: rgba(0, 142, 6, 0.4);
+}
+
+.purple {
+  background: rgba(124, 15, 123, 0.4);
+}
+
+header {
+  width: 100%;
+  background: crimson;
+  height: 100px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+}
+
+.nav-bar {
+  text-align: center;
+}
+
+.nav-bar a {
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+
+.content-wrapper {
+  margin-top: 100px;
 }
