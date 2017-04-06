@@ -5,12 +5,13 @@ const routes = require('./router.js');
 const inert = require('inert');
 const handlebars = require('handlebars');
 
+const port = process.env.PORT || 4040;
+
 const server = new hapi.Server()
 
 
 server.connection({
-  host: 'localhost',
-  port: Number(process.argv[2] || 4040)
+  port: port
 })
 
 server.register([inert, vision], (err) => {
