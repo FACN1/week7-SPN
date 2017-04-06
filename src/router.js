@@ -36,6 +36,7 @@ const add = {
   }
 }
 
+// payload.dish, payload.description, payload.chef_name, payload.background_color
 const createPost = {
   method: 'post',
   path: '/create-post',
@@ -50,8 +51,10 @@ const createPost = {
   },
   config: {
     validate: {
-      params: {
-        data: joi.string().alphanum()  
+      payload: {
+        dish: joi.string().alphanum().required(),
+        description: joi.string().alphanum().required(),
+        chef_name: joi.string().alphanum().required()
       }
     }
   }
