@@ -46,7 +46,7 @@ const createPost = {
       if(err) {
         return reply(err);
       }
-      reply('You added a new post');
+      reply.redirect('/');
     });
   },
   config: {
@@ -54,7 +54,8 @@ const createPost = {
       payload: {
         dish: joi.string().alphanum().required(),
         description: joi.string().alphanum().required(),
-        chef_name: joi.string().alphanum().required()
+        chef_name: joi.string().alphanum().required(),
+        background_color: joi.string()
       }
     }
   }
