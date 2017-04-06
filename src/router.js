@@ -44,7 +44,7 @@ const createPost = {
       if(err) {
         return reply(err);
       }
-      reply.redirect('/');
+      reply('You added a new post');
     });
   }
 }
