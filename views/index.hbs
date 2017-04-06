@@ -7,12 +7,20 @@
   </th>
 
   {{#each posts}}
-  <tr class={{background_color}}>
-    <td></td>
-    <td>{{dish}}</td>
-    <td>{{description}}</td>
-    <td>{{chef_name}}</td>
-    <td>{{date_published}}</td>
-  </tr>
+    <ul class={{background_color}}>
+      <li>
+        <ul>
+          <li>
+            <span>{{dish}} by {{chef_name}}</span>
+          </li>
+          <li>
+            <span>Posted: {{formatDate date_published}}</span>
+          </li>
+          <li>
+            <p>{{description}}</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
   {{/each}}
 </table>
