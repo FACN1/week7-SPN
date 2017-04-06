@@ -21,7 +21,7 @@ const index = {
         return reply(err)
       }
       const context = {
-        posts: postsArray
+        posts: postsArray.reverse()
       }
       reply.view('index', context);
     });
