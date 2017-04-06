@@ -1,5 +1,4 @@
 const path = require('path');
-const handlers = require('./handlers.js');
 const dbQueries = require('./db_queries.js');
 const joi = require('joi');
 
