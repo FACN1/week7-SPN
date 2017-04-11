@@ -1,5 +1,6 @@
 const path = require('path');
 const dbQueries = require('./db_queries.js');
+const joi = require('joi');
 
 const staticFiles = {
   method: 'GET',
@@ -35,6 +36,7 @@ const add = {
   }
 }
 
+// payload.dish, payload.description, payload.chef_name, payload.background_color
 const createPost = {
   method: 'post',
   path: '/create-post',
@@ -44,8 +46,18 @@ const createPost = {
       if(err) {
         return reply(err);
       }
-      reply('You added a new post');
+      reply.redirect('/');
     });
+  },
+  config: {
+    validate: {
+      payload: {
+        dish: joi.string().alphanum().required(),
+        description: joi.string().alphanum().required(),
+        chef_name: joi.string().alphanum().required(),
+        background_color: joi.string()
+      }
+    }
   }
 }
 
