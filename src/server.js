@@ -9,7 +9,6 @@ const port = process.env.PORT || 4040;
 
 const server = new hapi.Server()
 
-
 server.connection({
   port: port
 })
@@ -31,8 +30,6 @@ server.register([inert, vision], (err) => {
 
   server.route(routes);
 
-  server.start((err) => {
-    if (err) throw err;
-    console.log('Server running at:', server.info.uri);
-  });
 });
+
+module.exports = server;
